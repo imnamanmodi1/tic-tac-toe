@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/themeColors.scss';
 import Board from './board';
+import 'tachyons';
 
 
 function calculateWinner(squares) {
@@ -74,7 +75,7 @@ class Game extends React.Component {
                 'Go to game start';
             return (
                 <li key={move}>
-                    <button onClick={() => this.jumpTo(move)}>{desc}</button>
+                    <button className='f6 grow no-underline br-pill ba ph3 pv2 mb2 dib black' onClick={() => this.jumpTo(move)}>{desc}</button>
                 </li>
             );
         });
