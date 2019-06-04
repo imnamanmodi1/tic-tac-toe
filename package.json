@@ -4,8 +4,8 @@
   "description": "Simple React Boiler Plate",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
-    "build": "npm run webpack"
+    "start": "webpack-dev-server",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
